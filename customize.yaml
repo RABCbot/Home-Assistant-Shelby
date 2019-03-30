@@ -1,0 +1,26 @@
+device_tracker.8c4500967f29:
+  friendly_name: S9-Padre
+device_tracker.8c4500919423:
+  friendly_name: S9-Bebe
+device_tracker.8c4500880bcf:
+  friendly_name: S9-Apex
+device_tracker.8c4500331fba:
+  friendly_name: J3-Madre
+device_tracker.ac5f3e3c999d:
+  friendly_name: S7-Chuchi
+person.chuchi:
+  entity_picture: /local/chuchi.jpg
+person.bebe:
+  entity_picture: /local/bebe.jpg
+person.madre:
+  entity_picture: /local/madre.jpg
+person.padre:
+  entity_picture: /local/padre.jpg
+person.mamma:
+  entity_picture: /local/mamma.jpg
+switch.05200553bcddc2fc8c82:
+  friendly_name: Master Lights
+  icon: mdi:power-socket-us
+switch.05200019ecfabc9597df:
+  friendly_name: Guest Lights
+  icon: mdi:power-socket-us

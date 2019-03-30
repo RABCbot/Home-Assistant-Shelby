@@ -1,0 +1,21 @@
+homeassistant: !include home.yaml
+frontend:
+hassio:
+config:
+#map:
+history:
+logbook:
+logger:
+recorder:
+system_health:
+sun:
+person:
+device_tracker: !include device_tracker.yaml
+#mqtt: !include mqtt.yaml
+automation: !include automations.yaml
+group: !include groups.yaml
+notify: !include notify.yaml
+sensor: !include_dir_merge_list sensors
+switch: !include_dir_merge_list switches
+feedreader: !include feedreader.yaml
+tuya: !include tuya.yaml

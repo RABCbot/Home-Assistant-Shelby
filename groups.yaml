@@ -1,0 +1,20 @@
+default_view:
+  view: true
+  name: Home
+  icon: mdi:home-assistant
+  entities:
+  - group.family
+  - group.weather
+weather:
+  entities:
+  - sun.sun
+  - sensor.dark_sky_summary
+  - sensor.dark_sky_temperature
+  - sensor.dark_sky_humidity
+  - sensor.dark_sky_precip_probability
+  - sensor.dark_sky_pressure
+  - sensor.dark_sky_wind_speed
+family:
+  entities:
+  - person.chuchi
+  - person.padre

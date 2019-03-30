@@ -1,0 +1,34 @@
+- id: '1552848042945'
+  alias: chuchi
+  trigger:
+  - entity_id: person.chuchi
+    platform: state
+    to: home
+  condition: []
+  action:
+  - data:
+      message: Chuchi llego
+    service: notify.pushbullet
+- id: '1552928564319'
+  alias: weather_feed
+  trigger:
+  - event_data: {}
+    event_type: feedreader
+    platform: event
+  condition: []
+  action:
+  - data_template:
+      message: '{{ trigger.event.data.summary }} {{ trigger.event.data.id }}'
+      title: '{{ trigger.event.data.title }}'
+    service: persistent_notification.create
+- id: '1553686691260'
+  alias: padre
+  trigger:
+  - entity_id: person.padre
+    platform: state
+    to: home
+  condition: []
+  action:
+  - data:
+      message: Padre llego a Shelbytown
+    service: notify.pushbullet

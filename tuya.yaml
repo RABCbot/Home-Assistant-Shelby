@@ -1,0 +1,4 @@
+username: !secret DEFAULT_USERNAME
+password: !secret DEFAULT_PASSWORD
+country_code: 1
+platform: smart_life

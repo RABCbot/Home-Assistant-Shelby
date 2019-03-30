@@ -1,0 +1,7 @@
+name: Home
+latitude: !secret HOME_LATITUDE
+longitude: !secret HOME_LONGITUDE
+elevation: !secret HOME_ELEVATION
+unit_system: imperial
+time_zone: America/New_York
+customize: !include customize.yaml
