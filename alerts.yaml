@@ -1,0 +1,13 @@
+garage_door:
+  name: Shelby garage left open
+  entity_id: sensor.garage_door
+  can_acknowledge: true
+  skip_first: true
+  state: 'Open'
+  repeat:
+    - 6
+    - 15
+    - 60
+  notifiers:
+    - pushbullet
+  

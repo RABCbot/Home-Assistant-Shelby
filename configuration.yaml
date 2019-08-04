@@ -1,21 +1,28 @@
 homeassistant: !include home.yaml
+http:
+api:
 frontend:
 hassio:
 config:
 #map:
 history:
-logbook:
+#logbook:
 logger:
 recorder:
 system_health:
 sun:
 person:
 device_tracker: !include device_tracker.yaml
-#mqtt: !include mqtt.yaml
+mqtt: !include mqtt.yaml
+alert: !include alerts.yaml
 automation: !include automations.yaml
+script: !include scripts.yaml
 group: !include groups.yaml
 notify: !include notify.yaml
 sensor: !include_dir_merge_list sensors
 switch: !include_dir_merge_list switches
 feedreader: !include feedreader.yaml
 tuya: !include tuya.yaml
+tts:
+  - platform: google_translate
+    base_url: http://192.168.0.110:8123

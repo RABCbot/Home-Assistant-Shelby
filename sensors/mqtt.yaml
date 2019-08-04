@@ -1,0 +1,4 @@
+- platform: mqtt
+  name: 'esp165a0c_distance'
+  state_topic: 'home/ESP_165A0C/distance'
+  expire_after: 60

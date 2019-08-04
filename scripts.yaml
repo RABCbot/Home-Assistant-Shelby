@@ -1,0 +1,5 @@
+house_report:
+  sequence:
+  - data_template:
+      message: "Shelby Garage is {{ states.sensor.garage_door.state }}, Family TV is {{ states.media_player.family_room_tv.state }}; Master light is {{ states.switch['05200553bcddc2fc8c82'].state }}, Guest light is {{ states.switch['05200019ecfabc9597df'].state }}"
+    service: notify.pushbullet

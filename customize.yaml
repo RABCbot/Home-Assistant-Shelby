@@ -24,3 +24,9 @@ switch.05200553bcddc2fc8c82:
 switch.05200019ecfabc9597df:
   friendly_name: Guest Lights
   icon: mdi:power-socket-us
+sensor.garage_position:
+  friendly_name: Garage Door
+  icon: mdi:garage
+sensor.garage_door:
+  friendly_name: Garage Door
+  icon: mdi:garage

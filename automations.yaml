@@ -32,3 +32,28 @@
   - data:
       message: Padre llego a Shelbytown
     service: notify.pushbullet
+- id: '1563802391111'
+  alias: garage_left_open
+  trigger:
+  - entity_id: sensor.garage_door
+    for: 06:00
+    platform: state
+    to: Open
+  condition: []
+  action:
+  - data:
+      entity_id: media_player.kitchen_speaker
+      message: Shelby garage left open
+    service: tts.google_translate_say
+- id: '1564100499844'
+  alias: house_report
+  trigger:
+  - entity_id: light.0620040968c63ac45439
+    platform: state
+    to: 'on'
+  condition:
+  - condition: state
+    entity_id: person.chuchi
+    state: not_home
+  action:
+  - service: script.house_report
